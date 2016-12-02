@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "office-vibe-client"
+require "irb"
+
+token = ENV['OFFICEVIBE_API_KEY']
+OfficeVibe.setup token: token 
+IRB.start
